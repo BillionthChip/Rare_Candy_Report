@@ -56,6 +56,11 @@ def main():
     id = data["id"]
     print("Pokemon ID: " + str(id))
 
+    image = data["sprites"]["front_default"]
+    
+    print(image)
+
+
 
 
 
