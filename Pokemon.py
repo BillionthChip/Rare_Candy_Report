@@ -3,7 +3,7 @@ import requests
 def main():
     userinput = input("Enter a name of a pokemon to see their stats: \n")
  
-    url = f"https://pokeapi.co/api/v2/pokemon/{userinput}"
+    url = f"https://pokeapi.co/api/v2/pokemon/{userinput.lower()}"
 
     response = requests.get(url)
 
@@ -11,15 +11,17 @@ def main():
 
     print(" ")
 
+    
+
     name = data["name"]
     display = print("Name:\n" + name.title())
     print(" ")
 
 
-
     weight = data["weight"]
     displayW = print("Weight: " + str(weight))
     print(" ")
+
 
     height = data["height"]
     displayH = print("Height: "+ str(height))
@@ -33,11 +35,12 @@ def main():
     print(" ")
 
     abilities = data["abilities"]
-    first_ability = abilities[1]
-    first_ability1 = first_ability["ability"]["name"]
+    second_ability = abilities[1]
+    second_ability2 = first_ability["ability"]["name"]
 
-    print("Ability #2: " + first_ability1.title())
+    print("Ability #2: " + second_ability2.title())
     print(" ")
+
 
     moves = data["moves"]
     moves_list = moves[0]
@@ -58,10 +61,7 @@ def main():
 
     image = data["sprites"]["front_default"]
     
-    print(image)
-
-
-
+    print(f"Image of {userinput}: " + image)
 
 
 
