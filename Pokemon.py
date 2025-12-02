@@ -1,5 +1,6 @@
 import requests
 
+
 def main():
 
     userinput = input("Enter a name of a pokemon to see their stats: \n")
