@@ -1,9 +1,71 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
-    font-;
-    padding: 10 10 10 10;
+h1{
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 2px;
+    font-size: 60px;
+
+   
+}
+
+h3{
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 2px;
+    font-size: 48px;
+
+}
+
+body{
     background-image: url(thimo-pedersen-dip9IIwUK6w-unsplash.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 740%
+    background-size: 2000px;
+    background-position: contain;
+
+}
+
+img{
+    border-radius: 50px;
+    width: 200px;
     
 }
+
+.search{
+    
+    --padding: 2px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: var(--padding);
+    border-radius: 14px;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.search-input{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+    flex: 1;
+    position: relative;
+    
+}
+
+.search-input::placeholder,
+.search.icon {
+    color: rgba(0,0,0,0.5)
+    
+
+}
+    
