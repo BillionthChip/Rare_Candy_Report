@@ -25,19 +25,47 @@ body{
     background-size: 2000px;
     background-position: contain;
 
-    
-    
-    
-    
-
 }
+
 img{
     border-radius: 50px;
     width: 200px;
     
 }
 
-#search{
-    height: 12px;
-    width:auto;
+.search{
+    
+    --padding: 2px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: var(--padding);
+    border-radius: 14px;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+    position: relative;
+
 }
+
+.search-input{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+    flex: 1;
+    position: relative;
+    
+}
+
+.search-input::placeholder,
+.search.icon {
+    color: rgba(0,0,0,0.5)
+    
+
+}
+    

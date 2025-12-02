@@ -1,6 +1,7 @@
 import requests
 
 def main():
+
     userinput = input("Enter a name of a pokemon to see their stats: \n")
  
     url = f"https://pokeapi.co/api/v2/pokemon/{userinput.lower()}"
@@ -10,8 +11,6 @@ def main():
     data = response.json()
 
     print(" ")
-
-    
 
     name = data["name"]
     display = print("Name:\n" + name.title())
@@ -62,7 +61,6 @@ def main():
     image = data["sprites"]["front_default"]
     
     print(f"Image of {userinput}: " + image)
-
 
 
 print("Welcome To Poke-Stats!\n")
